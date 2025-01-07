@@ -1,6 +1,7 @@
 import { GithubIcon, GitlabIcon, LinkedinIcon, MessagesSquareIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { CustomLink } from "./custom-link";
 
 export function Sidebar() {
   return (
@@ -17,25 +18,25 @@ export function Sidebar() {
       </div>
       <ul className="flex flex-col gap-2 bg-neutral-800/80 w-full p-1 rounded-xl">
         <li>
-          <Link className="rounded-lg transition aspect-square w-full flex items-center justify-center hover:bg-white/20" href="https://github.com/devmatheusss" target="_blank" rel="noreferrer">
+          <CustomLink href="https://github.com/devmatheusss" overlayLabel="GitHub">
             <GithubIcon size={20} />
-          </Link>
+          </CustomLink>
         </li>
         <li>
-          <Link className="rounded-lg transition aspect-square w-full flex items-center justify-center hover:bg-white/20" href="https://github.com/devmatheusss" target="_blank" rel="noreferrer">
+          <CustomLink href="https://github.com/devmatheusss" overlayLabel="LinkedIn">
             <LinkedinIcon size={20} />
-          </Link>
+          </CustomLink>
         </li>
         <li>
-          <Link className="rounded-lg transition aspect-square w-full flex items-center justify-center hover:bg-white/20" href="https://github.com/devmatheusss" target="_blank" rel="noreferrer">
+          <CustomLink href="https://github.com/devmatheusss" overlayLabel="GitLab">
             <GitlabIcon size={20} />
-          </Link>
+          </CustomLink>
         </li>
       </ul>
       <div className="w-full p-1 rounded-xl bg-neutral-800/80">
-        <Link href="mailto:contact@theavelino.dev" className="rounded-lg transition aspect-square w-full flex items-center justify-center hover:bg-white/20">
+        <CustomLink href="mailto:contact@theavelino.dev" overlayLabel="Contact">
           <MessagesSquareIcon size={20} />
-        </Link>
+        </CustomLink>
       </div>
     </aside>
   )
