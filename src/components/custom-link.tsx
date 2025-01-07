@@ -1,4 +1,3 @@
-import type { IconNode } from 'lucide-react'
 import Link, { type LinkProps } from 'next/link'
 
 interface CustomLinkProps extends LinkProps {
