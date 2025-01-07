@@ -14,4 +14,8 @@
   body {
     @apply h-screen flex gap-4 items-center justify-center overflow-hidden;
   }
+
+  .js-link {
+    view-transition-name: javascript;
+  }
 }

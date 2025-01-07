@@ -10,6 +10,10 @@ export default function TechsPage() {
         </Link>
         <h1 className="text-3xl font-semibold">Techs</h1>
       </div>
+
+      <section>
+        <h2 id="javascript" className="js-link">JavaScript</h2>
+      </section>
     </div>
   )
 }
